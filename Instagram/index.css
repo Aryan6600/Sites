@@ -1,0 +1,172 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #f9f9f9;
+	padding: 20px;
+}
+.login
+{
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	height: 375px;
+	width: 350px;
+	border:1px solid #D5DBDB;
+}
+.create
+{
+	background-color: white;
+	font-size: 18px;
+	margin-top: 10px;
+	height: 65px;
+	width: 350px;
+	border:1px solid #D5DBDB;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.create a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	color: blue;
+	margin-left: 3px;
+}
+input[type="text"],input[type="password"]
+{
+	border-radius: 2px;
+	font-size: 12px;
+	height: 25px;
+	width: 260px;
+	padding: 6px 5px 6px 8px;
+	margin-bottom: 5px;
+	background-color: #f7f7f7;
+	outline: none;
+	border: 1px solid #D5DBDB;
+}
+.new
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.title
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 65px;
+	background-image: url("insta.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 60px;
+}
+input[type="submit"]
+{
+	margin-top: 10px;
+	height: 30px;
+	width: 272px;
+	background-color: #acd9fc;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	opacity: 0.9;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.forgot
+{
+	margin-top: 10px;
+	color: #033359;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.fb
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.img
+{
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+	background-image: url("favicon.ico");
+	background-size: contain;
+}
+.fb a
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.fb b
+{
+	color: #0F5A94;
+	font-size: 13px;
+}
+.login p
+{
+	margin-top: 10px;
+	text-align: center;
+	opacity: 0.5;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.app
+{
+	font-family: Arial, Helvetica, sans-serif; 
+	margin-top: 25px;	
+	font-size: 14px;
+}
+.appStore
+{
+	position: relative;
+	height: 85px;
+	width: 135px;
+	background-image: url("appStore.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.playStore
+{
+	position: relative;
+	height: 85px;
+	width: 135px;
+	background-image: url("playStore.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 8px;
+}
+.store
+{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+}
+.links
+{
+	max-width: 100%;
+}
+.links a
+{
+	text-decoration: none;
+	color: grey;
+	margin-right: 8px;	
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;  
+}
