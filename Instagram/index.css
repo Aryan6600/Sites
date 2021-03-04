@@ -1,0 +1,164 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #f9f9f9;
+	padding: 20px;
+}
+.login
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	height: 205px;
+	width: 190px;
+	border:1px solid #c3c3c3;
+}
+.create
+{
+	background-color: white;
+	font-size: 8px;
+	margin-top: 6px;
+	height: 35px;
+	width: 190px;
+	border:1px solid #c3c3c3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.create a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	text-decoration: none;
+	color: blue;
+	margin-left: 3px;
+}
+input[type="text"],input[type="password"]
+{
+	border-radius: 2px;
+	font-size: 7px;
+	height: 8px;
+	width: 140px;
+	padding: 6px 5px 6px 5px;
+	margin-bottom: 2px;
+	background-color: #f7f7f7;
+	outline: none;
+	border: 1px solid #e1e1e1;
+}
+.new
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+}
+.title
+{
+	width: 140px;
+	height: 35px;
+	background-image: url("insta.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-left: 40px;
+}
+input[type="submit"]
+{
+	margin-top: 5px;
+	height: 18px;
+	width: 152px;
+	background-color: #acd9fc;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	opacity: 0.9;
+	font-size: 8px;
+	margin-bottom: 8px;
+}
+.forgot
+{
+	color: #033359;
+	margin-top: 10px;
+	font-size: 7px;
+}
+.fb
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+}
+.img
+{
+	height: 10px;
+	width: 10px;
+	margin-right: 3px;
+	background-image: url("favicon.ico");
+	background-size: contain;
+}
+.fb a
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.fb b
+{
+	color: #0F5A94;
+	font-size: 8px;
+}
+.login p
+{
+	text-align: center;
+	opacity: 0.5;
+	font-size: 7px;
+}
+.app
+{
+	font-family: Arial, Helvetica, sans-serif; 
+	margin-top: 15px;	
+	font-size: 8px;
+}
+.appStore
+{
+	position: relative;
+	height: 50px;
+	width: 80px;
+	background-image: url("appStore.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.playStore
+{
+	position: relative;
+	height: 50px;
+	width: 80px;
+	background-image: url("playStore.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+}
+.store
+{
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+}
+.links
+{
+	max-width: 100%;
+}
+.links a
+{
+	text-decoration: none;
+	color: grey;
+	margin-right: 8px;	
+	font-size: 7px;
+	font-family:Arial, Helvetica, sans-serif;  
+}
