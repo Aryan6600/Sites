@@ -1,9 +1,12 @@
-# Copy of Social Media Websites Login pages
+# Copy of Popular Websites Login Page
 
-# Not a copy of source code
+# Use only for Fair Purpose
 
-# I only made them !
+# if you Copy Then Give me Some Credits
 
-# Only for Fair Use !
-
-# if you Copy Then Give me Some Credits please
+# Webpage Demo
+  
+  [Google New Login](http://aryan6600.github.io/Sites/Google New)
+  [Facebook Login](http://aryan6600.github.io/Sites/Facebook)
+  [Instagram Login](http://aryan6600.github.io/Sites/Instagram)
+  [PayPal](http://aryan6600.github.io/Sites/PayPal)
