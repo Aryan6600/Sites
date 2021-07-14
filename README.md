@@ -6,7 +6,7 @@
 
 # Webpage Demo
   
-  [Google New Login](http://aryan6600.github.io/Sites/Google New)
-  [Facebook Login](http://aryan6600.github.io/Sites/Facebook)
-  [Instagram Login](http://aryan6600.github.io/Sites/Instagram)
-  [PayPal](http://aryan6600.github.io/Sites/PayPal)
+  1. [Google](http://aryan6600.github.io/Sites/Google%20New)
+  2. [Facebook](http://aryan6600.github.io/Sites/Facebook)
+  3. [Instagram](http://aryan6600.github.io/Sites/Instagram)
+  4. [PayPal](http://aryan6600.github.io/Sites/PayPal)
