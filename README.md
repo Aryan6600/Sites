@@ -1,7 +1,5 @@
 # Design of Popular Websites Login Page
 
-# if you Copy Then Give me Some Credits
-
 # Webpage Demo
   
   1. [Google](http://aryan6600.github.io/Sites/Google%20New)
