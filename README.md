@@ -8,6 +8,6 @@
   4. [PayPal](http://aryan6600.github.io/Sites/PayPal)
   4. [Github](http://aryan6600.github.io/Sites/Github)
 
-# Note
+# Notice
 
 Developers are not responsble for any kind of damage to anything other use only for fair purposes
