@@ -10,4 +10,4 @@
 
 # Note
 
-Developers are not responsble for any kind of damage use only for fair purposes
+Developers are not responsble for any kind of damage to anything other use only for fair purposes
