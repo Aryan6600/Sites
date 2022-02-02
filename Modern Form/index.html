@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="title">Login Here</h1>
+      <span class="subtitle">Easy login with your github account </span>
+      <br />
+      <br />
+      <div class="wrapper">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          minlength="5"
+          maxlength="8"
+        />
+      </div>
+      <div class="wrapper">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="wrapper">
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          minlength="8"
+          maxlength="15"
+          required
+        />
+      </div>
+      <div class="terms">
+        <label for="">I Accept All the terms and Conditions</label>
+        <input type="checkbox" name="" id="" />
+      </div>
+      <input type="submit" value="Submit" class="btn" />
+    </form>
+  </body>
+</html>

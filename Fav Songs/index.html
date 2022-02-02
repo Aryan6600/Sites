@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Favoutite Songs1</title>
+</head>
+<body>
+    <nav class="navbar shadow-on-scroll" id="navbar">
+        <h1 class="navbar-brand">Fav. Songs</h1>
+        <div class="navbar-toggler" id="bgr" data-toggle="nav">
+            <div class="line"></div>
+            <div class="line"></div>    
+            <div class="line"></div>
+        </div>
+        <div class="collapse" id="nav">
+            <ul class="navbar-nav">
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="songs">
+
+        </div>
+    </div>
+    <div class="bottom">
+        <input  type="range" name="" id="progress" class="progress" value="0">
+        <div class="detail">
+            <span class="sitle">
+                Halsey Without me
+            </span>
+            <div class="control">
+                <button class="master"  id="prevBtn">Previous</button>
+                <button class="master"  id="masterBtn">Play/Pause</button>
+                <button class="master"  id="nextBtn">Next</button>
+            </div>
+            <input type="range" name="" id="sound" class="sound" min="0" max="100" value="100">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

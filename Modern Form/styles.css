@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.form {
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+}
+.title {
+  font-weight: 500;
+  font-size: 2em;
+}
+.subtitle {
+  line-height: 30px;
+  color: rgb(68, 68, 68);
+  font-size: 1.1em;
+  margin-bottom: 10em;
+}
+label {
+  color: rgb(43, 42, 42);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  width: 100%;
+}
+.wrapper label {
+  line-height: 32px;
+  font-size: large;
+}
+.wrapper input {
+  padding: 12px 5px; 
+  background-color: rgb(240, 238, 238);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border-left: 2px solid red;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wrapper input:valid {
+  border-left: 2px solid green;
+}
+.terms {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 1em;
+}
+.terms label {
+  margin-left: 10px;
+  font-weight: 500px;
+  font-size: 1.1em;
+  text-align: left;
+  width: 100%;
+}
+.terms input{
+  color: red;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(8, 65, 221);
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  float: right;
+  cursor: pointer;
+}

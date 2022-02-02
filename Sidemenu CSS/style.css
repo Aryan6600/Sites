@@ -1,0 +1,131 @@
+:root{
+    --blue:rgb(9, 83, 219);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+.sidemenu{
+    height:100vh;
+    position:absolute;
+    left: 0;
+    top: 0;
+    background:var(--blue) ;
+    width:max-content;
+    overflow: hidden;
+}
+.sidemenu .menu{
+    width:100%;
+    list-style:none;
+    overflow: hidden;
+    height:100vh;
+}
+
+.sidemenu .menu .menu-item{
+    width:100%;
+    padding:20px 30px;
+    color: white;
+    cursor: pointer;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 10px 0;
+    position:relative;
+    display: flex;
+    align-items:center;
+    min-width: 100%;
+    word-wrap: none;
+    width: 300px;
+}
+.menu-item ion-icon{
+    font-size:1.6em;
+    margin-right: 20px;
+}
+.sidemenu .menu .menu-item:nth-child(1){
+    pointer-events: none;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+    font-size:1.2em;
+}
+.sidemenu .menu .menu-item::before{
+    content: '';
+    position:absolute;
+    top: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.sidemenu .menu .menu-item::after{
+    content: '';
+    position:absolute;
+    bottom: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.sidemenu .menu .menu-item:nth-child(1)::before{
+    display: none;
+}
+.sidemenu .menu .menu-item:hover,
+.sidemenu .menu .menu-item.active{
+    background-color:white;
+    color:var(--blue);
+}
+.sidemenu .menu .menu-item.active::before,
+.sidemenu .menu .menu-item:hover::before{
+    box-shadow:35px 35px 0 10px #fff;
+}
+.sidemenu .menu .menu-item.active::after,
+.sidemenu .menu .menu-item:hover::after{
+    box-shadow:35px -35px 0 10px #fff;
+}
+.main{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:calc(100% - 300px);
+    background:white;
+    min-height: 100vh;
+}
+.main nav{
+    width:100%; 
+    background:var(--blue);
+    padding:15px;
+}
+.burger{
+    width: 30px;
+    height:30px;
+    background-color: transparent;
+    outline:none;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+}
+.burger span{
+    width:100%;
+    background-color: white;
+    height:3px;
+    pointer-events: none;
+}
+.main .content{
+    width:100%;
+    padding:20px;
+}
+.main .content .heading{
+    font-weight: normal;
+    font-size:4em;
+    text-align: center;
+}
