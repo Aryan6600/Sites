@@ -1,0 +1,247 @@
+:root{
+    --theme-color-3:#66FFCC;
+    --theme-color-2:#FF0066;
+    --theme-color-1:#18c5ff;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-track{
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(224, 222, 222);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    cursor: pointer;
+}
+header{
+    height: 100vh;
+}
+.navbar{
+    width: 100%;
+    /* background-color: rgba(255,255,255,0.9); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    box-shadow: none;
+    transition: all 0.5s;
+    z-index: 100;
+    z-index: 5;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar-brand{
+    padding: 1vh 0;
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    color: var(--theme-color-1);
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand span{
+    font-size: 2vh;
+    padding: 0.5vh 0;
+    color: gray;
+    font-weight: normal;
+}
+.navbar-toggler{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--theme-color-1);
+    margin:5px 0;
+    pointer-events: none;
+}
+.line:nth-child(1){
+    width: 50%;
+}
+.line:nth-child(3){
+    width: 50%;
+    margin-right: auto;
+}
+.collapse{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+}
+.collapse ul li a{
+    font-size: 3vh;
+}
+.collapse.active{
+    /* height: 250px;
+     */
+     display: flex;
+     opacity: 1;
+}
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.navbar-nav li{
+    margin: 0 10px;
+    padding: 10px;
+    width: 100%;
+}
+.navbar-nav li a{
+    color: gray;
+    font-weight: semibold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 18px;
+}
+.navbar-nav li a.btn{
+    color:#fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    transition: all 0.2s;
+    background: var(--theme-color-1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--theme-color-1);
+}
+.navbar-nav li a:hover{
+    color: var(--theme-color-1);
+    background: transparent;
+}
+.navbar-nav li a.active{
+    color: var(--theme-color-1);
+}
+
+section.aboutme{
+    min-height: 100vh;
+    background:linear-gradient(180deg, #fff 50%, var(--theme-color-1) 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 15vh;
+}
+section.aboutme .content{
+    padding: 2em 1em;
+    color: #fff;
+}
+section.aboutme .content h2{
+    font-size: 4vh;
+}
+section.aboutme .content p{
+    padding: 1em 0;
+    line-height: 1.6em;
+}
+section.aboutme .profile .part1{
+    display: flex;
+    padding: 3vw;
+    background-color: #fff;
+    min-width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 0px 224px -25px rgba(0,0,0,0.75);
+}
+section.aboutme .profile .part1 .img-wrapper{
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border-radius: 100000vw;
+    margin: 1em auto;
+}
+section.aboutme  .profile .part1 .img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+section.aboutme .profile .part2{
+    display: none;
+
+}
+section.aboutme .profile .part1 .actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+section.aboutme .profile .part1 h1{
+    padding: 1em;
+    width: min-content;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--theme-color-1);
+    text-align: center;
+}
+section.aboutme .profile .part1 .social-media{
+    padding: 1em;
+    background: var(--theme-color-1);
+    display: flex;
+    justify-content: space-evenly;
+}
+section.aboutme .profile .part1 .actions a.btn{
+    text-decoration: none;
+    background-color: var(--theme-color-1);
+    border-radius: 10000em;
+    color: #fff;
+    display: block;
+    padding: 1em;
+}
+section.aboutme .profile .part1 .actions a.btn:nth-child(2){
+    color: var(--theme-color-1);
+    background: #fff;
+    border: 2px solid var(--theme-color-1);
+}
+ion-icon{
+    color: #fff;
+    /* padding: ; */
+    font-size: 3vh;
+    padding: 0 0.5em;
+}
+@media (min-width:992px) {
+    .navbar{
+        padding: 5px 60px;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        width: max-content;
+    }
+    .collapse{
+        width: max-content;
+        height: auto;
+    }
+    .collapse.active{
+        height: auto;
+    }
+}
