@@ -2,6 +2,8 @@
     --theme-color-3:#66FFCC;
     --theme-color-2:#FF0066;
     --theme-color-1:#18c5ff;
+    --theme-black:#181818;
+    --rotation:150deg;
 }
 ::-webkit-scrollbar{
     width: 0px;
@@ -27,6 +29,7 @@ header{
 .navbar{
     width: 100%;
     /* background-color: rgba(255,255,255,0.9); */
+    background-color: rgba(0,0,0,0.75);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +39,7 @@ header{
     transition: all 0.5s;
     z-index: 100;
     z-index: 5;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(100px); */
     position: fixed;
     top: 0;
     left: 0;
@@ -88,7 +91,7 @@ header{
     left: 0;
     height: 100vh;
     display: none;
-    background-color: #fff;
+    background-color: var(--theme-black);
     flex-direction: column;
     justify-content: center;
 }
@@ -146,7 +149,7 @@ header{
 
 section.aboutme{
     min-height: 100vh;
-    background:linear-gradient(180deg, #fff 50%, var(--theme-color-1) 50%);
+    background:linear-gradient(var(--rotation), #181818 50%, var(--theme-color-1) 50%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -158,6 +161,13 @@ section.aboutme .content{
     padding: 2em 1em;
     color: #fff;
 }
+section.aboutme .profile{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+
 section.aboutme .content h2{
     font-size: 4vh;
 }
@@ -168,15 +178,16 @@ section.aboutme .content p{
 section.aboutme .profile .part1{
     display: flex;
     padding: 3vw;
-    background-color: #fff;
-    min-width: 80vw;
+    background-color: #181818;
+    flex: 0.4;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
     box-shadow: 1px 0px 224px -25px rgba(0,0,0,0.75);
 }
 section.aboutme .profile .part1 .img-wrapper{
-    width: 10em;
-    height: 10em;
+    width: 15em;
+    height: 15em;
     overflow: hidden;
     border-radius: 100000vw;
     margin: 1em auto;
@@ -187,7 +198,19 @@ section.aboutme  .profile .part1 .img-wrapper img{
 }
 section.aboutme .profile .part2{
     display: none;
+    padding: 2em;
+    box-shadow: 1px 0px 224px -25px rgba(0,0,0,0.75);
+    background-color: var(--theme-color-1);
+    flex: 0.6;
 
+}
+section.aboutme .profile .part2 h2{
+    font-size: 4vh;
+    padding: 1em 0;
+}
+section.aboutme .profile .part2 p{
+    line-height:1.6em ;
+    padding-bottom: 1em;
 }
 section.aboutme .profile .part1 .actions {
     display: flex;
@@ -196,7 +219,7 @@ section.aboutme .profile .part1 .actions {
 }
 section.aboutme .profile .part1 h1{
     padding: 1em;
-    width: min-content;
+    width:max-content;
     margin: 0 auto;
     border-bottom: 2px solid var(--theme-color-1);
     text-align: center;
@@ -212,12 +235,27 @@ section.aboutme .profile .part1 .actions a.btn{
     background-color: var(--theme-color-1);
     border-radius: 10000em;
     color: #fff;
-    display: block;
+    display: flex;
+    border: 1px solid transparent;
+    align-items: center;
     padding: 1em;
+    transition: 0.2s all;
 }
-section.aboutme .profile .part1 .actions a.btn:nth-child(2){
+section.aboutme .profile .part1 .actions a.btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--theme-color-1);
+
+}
+section.aboutme .profile .part1 .actions a.btn.special:hover{
+    background-color: var(--theme-color-1);
+    transform: scale(1.05);
+    color: #fff;
+
+}
+section.aboutme .profile .part1 .actions a.btn.special{
     color: var(--theme-color-1);
     background: #fff;
+    background-color: transparent;
     border: 2px solid var(--theme-color-1);
 }
 ion-icon{
@@ -225,7 +263,120 @@ ion-icon{
     /* padding: ; */
     font-size: 3vh;
     padding: 0 0.5em;
+    transition: 0.2s all;
 }
+.spacer{
+    padding: 0 2em;
+}
+ion-icon:hover{
+    transform: scale(1.1);
+}
+
+/*  */
+
+section.projects{
+    min-height: 100vh;
+    background-color: #181818;
+    background:linear-gradient(calc(180deg + var(--rotation)), #181818 50%, var(--theme-color-1) 50%);
+    padding: 1em;
+    color: #fff;
+
+
+}
+section.commmon{
+    padding: 1em;
+}
+section.common .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section.common .container h2{
+    font-size: 6vw;
+    border-bottom: 2px solid white;
+    width: max-content;
+    padding: 1em 0;
+}
+section.common .container .grid-wrapper{
+    padding: 4vh;
+}
+section.common .container .grid-wrapper .grid{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    display: grid;
+    gap: 2em;
+}
+section.common .container .grid-wrapper .grid .card{
+        box-shadow: 1px 0px 224px -25px rgba(0,0,0,0.75);
+        padding: 2vh;
+        background-color: var(--theme-color-1);
+        transition: 0.2s;
+} 
+section.common .container .grid-wrapper .grid .card p{
+    line-height: 1.6em;
+    padding-bottom: 2vh;
+}
+section.common .container .grid-wrapper .grid .card a.view-btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #Fff;
+    border: 1px solid white;
+    width: max-content;
+    padding: 5px 10px;
+    transition: 0.2s;
+    border-radius: 1000em;
+}
+section.common .container .grid-wrapper .grid .card a.view-btn ion-icon{
+    transition: 0.2s;
+    padding: 0;
+}
+section.common .container .grid-wrapper .grid .card a.view-btn:hover{
+    background-color: #Fff;
+    color: var(--theme-color-1);
+}
+section.common .container .grid-wrapper .grid .card a.view-btn:hover ion-icon{
+    color: var(--theme-color-1);
+}
+/* section.common .container .grid-wrapper .grid .card a.view-btn:nth-child(even):hover{
+    background-color: #Fff;
+    color: var(--theme-black);
+}
+section.common .container .grid-wrapper .grid .card a.view-btn:nth-child(even):hover ion-icon{
+    color: var(--theme-black);
+} */
+section.common .container .grid-wrapper .grid .card:hover{
+    transform: scale(1.1);
+}
+section.common .container .grid-wrapper .grid .card h3{
+    padding-bottom: 1vw;
+}
+section.common .container .grid-wrapper .grid .card:nth-child(even){
+    background-color: var(--theme-black);
+}
+section.services{
+    min-height: 100vh;
+    background-color: #181818;
+    color: white;
+    padding: 2vw;
+    background:linear-gradient(var(--rotation), #181818 50%, var(--theme-color-1) 50%);
+
+}
+section.services .container .grid-wrapper .grid .card{
+    background-color: transparent;
+    backdrop-filter: blur(2em);
+    border-radius: 1em;
+
+
+}
+section.services .container .grid-wrapper .grid .card:nth-child(even){
+    background-color: transparent;
+}
+section.services .container .grid-wrapper .grid .card:hover{
+    transform: none;
+}
+section.services .container .grid-wrapper .grid .card h3{
+    font-size: 5vh;
+}
+
 @media (min-width:992px) {
     .navbar{
         padding: 5px 60px;
@@ -240,8 +391,34 @@ ion-icon{
     .collapse{
         width: max-content;
         height: auto;
+        display: flex;
+        position: relative;
+        background-color: transparent;
     }
     .collapse.active{
         height: auto;
+    }
+    #cnt{
+        display: none;
+    }
+    section.aboutme .profile .part2{
+        display: block;
+    }
+    .collapse{
+        display: block;
+    }
+    section.common{
+        padding: 10vh 0;
+    }
+    section.common .container{
+        padding: 4vh 0;
+    }
+    section.common .container .grid-wrapper{
+        padding-top: 10vh;
+    }
+    section.common .container .grid-wrapper .grid{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        display: grid;
+        gap: 2em;
     }
 }
